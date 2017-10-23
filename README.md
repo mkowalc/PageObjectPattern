@@ -18,7 +18,7 @@
 
 6. run your tests with `python runtests.py`
 
-Foregoing steps are necessary to run this code, as this is just an example.
+#### If you want to try this code, just change FirefoxBinary path and type `python runtests.py` in prompt - it'll "test" few of W3.org functionalities. 
 
 #### Examples:
 
