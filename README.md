@@ -28,24 +28,24 @@ Foregoing steps are necessary to run this code, as this is just an example.
     ```
     class LoginPage(BasePage):
 
-    url = `https://example.com/login`
+      url = `https://example.com/login`
 
-    def open_login_page(self):
-      self.navigate(self.url)
+      def open_login_page(self):
+        self.navigate(self.url)
 
-    def enter_username(self, user):
-      self.find_element(*LoginPageLocators.USERNAME).send_keys(users.get_user(user)["username"])
+      def enter_username(self, user):
+        self.find_element(*LoginPageLocators.USERNAME).send_keys(users.get_user(user)["username"])
 
-    def enter_password(self, user):
-      self.find_element(*LoginPageLocators.PASSWORD).send_keys(users.get_user(user)["password"])
+      def enter_password(self, user):
+        self.find_element(*LoginPageLocators.PASSWORD).send_keys(users.get_user(user)["password"])
 
-    def click_login_button(self):
-      self.find_element(*LoginPageLocators.BUTTON).click()
+      def click_login_button(self):
+        self.find_element(*LoginPageLocators.BUTTON).click()
 
-    def login(self, user):
-      self.enter_username(user)
-      self.enter_password(user)
-      self.click_login_button()
+      def login(self, user):
+        self.enter_username(user)
+        self.enter_password(user)
+        self.click_login_button()
     ```
 
     ### 2. In `locators.py`
