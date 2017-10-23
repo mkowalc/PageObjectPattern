@@ -1,8 +1,8 @@
 **Python 2.7.x only!**
 
-#Page Object Pattern in Python
+# Page Object Pattern in Python
 
-####How to run it?:
+#### How to run it?:
 
 
 1. change FirefoxBinary path in file `environment.py` in line `binary = FirefoxBinary('...')`
@@ -20,10 +20,10 @@
 
 Foregoing steps are necessary to run this code, as this is just an example.
 
-####Example:
+#### Example:
 
 - **Basic login**
-    1. In `base.py`:
+    ### 1. In `base.py`:
 
     ```
     class LoginPage(BasePage):
@@ -48,7 +48,7 @@ Foregoing steps are necessary to run this code, as this is just an example.
       self.click_login_button()
     ```
 
-    2. In `locators.py`
+    ### 2. In `locators.py`
 
     ```
     class LoginPageLocators(object):
@@ -57,7 +57,7 @@ Foregoing steps are necessary to run this code, as this is just an example.
       PASSWORD = (By.ID, 'login-password')
       BUTTON = (By.ID, 'btn-login')
     ```
-    3. In `testCases.py`
+    ### 3. In `testCases.py`
 
     ```
     def exampleLogin(self):
@@ -69,7 +69,7 @@ Foregoing steps are necessary to run this code, as this is just an example.
       base.ExampleLoginPage.close(page)
     ```
 
-    4. In `users.py`
+    ### 4. In `users.py`
 
     ```
     users = [
