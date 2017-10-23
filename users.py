@@ -5,7 +5,7 @@ from operator import itemgetter
 users = [
 
 	{"name": "invalid_user", "username": "user", "password": "passwd"},
-	{"name": "valid_user", "username": "admion", "password": "123test"},
+	{"name": "invalid_user2", "username": "admion", "password": "123test"},
 
 ]
 
