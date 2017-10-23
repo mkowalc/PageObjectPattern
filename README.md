@@ -20,7 +20,7 @@
 
 Foregoing steps are necessary to run this code, as this is just an example.
 
-#### Example:
+#### Examples:
 
 - **Basic login**
     ### 1. In `base.py`:
@@ -80,6 +80,26 @@ Foregoing steps are necessary to run this code, as this is just an example.
     ]
 
     ```
+
+  - **Prtsc:**
+
+  ### 1. in `testCases.py`:
+
+  ```
+  (...)
+  import environment
+  (...)
+  # in class ExampleTest:
+
+  ##
+  def testscreenOnly(self):
+      page = base.MainW3Page()
+      base.MainW3Page.open_main_page(page)
+      environment.grab_and_save_screen('screenOnly') ##'screenOnly' is name of screen file
+      base.MainW3Page.close(page)
+  ##
+
+  ```
 
 
 **Python 2.7.x only!**

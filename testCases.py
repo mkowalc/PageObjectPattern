@@ -7,9 +7,6 @@ import users
 import environment
 import unittest
 from selenium.webdriver.common.by import By
-import os
-import prtsc
-import datetime
 
 binary = environment.setBinary()
 
