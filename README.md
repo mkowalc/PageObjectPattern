@@ -102,4 +102,12 @@ Foregoing steps are necessary to run this code, as this is just an example.
   ```
 
 
+  ## PRTSC does not work?
+
+  #### If prtsc does not work, then you should remove file prtscn.so, and then compile prtsc.c again using the following command:
+
+  ```
+  gcc -shared -O3 -lX11 -fPIC -Wl,-soname,prtscn -o prtscn.so prtscn.c
+  ```
+  *requires gcc*
 **Python 2.7.x only!**
