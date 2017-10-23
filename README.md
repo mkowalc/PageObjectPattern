@@ -2,6 +2,8 @@
 
 # Page Object Pattern in Python
 
+#### *If you want to try this code, just change FirefoxBinary path and type `python runtests.py` in prompt - it'll "test" few of W3.org functionalities.* 
+
 #### How to run it?:
 
 
@@ -18,7 +20,7 @@
 
 6. run your tests with `python runtests.py`
 
-#### If you want to try this code, just change FirefoxBinary path and type `python runtests.py` in prompt - it'll "test" few of W3.org functionalities. 
+
 
 #### Examples:
 
