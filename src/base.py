@@ -6,6 +6,7 @@ import locators
 from locators import *
 import users
 import os
+import config as cfg
 binary = environment.setBinary()
 
 
@@ -34,7 +35,7 @@ class BasePage(object):
 
 class MainW3Page(BasePage):
 
-    url = 'https://www.w3.org' #ENTER_URL
+    url = cfg.tests['url']
 
     def open_main_page(self):
         self.navigate(self.url)

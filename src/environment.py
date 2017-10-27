@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from selenium.webdriver.common.keys import Keys
+import config as cfg
 import string
 import os
 import random
@@ -10,7 +11,7 @@ import datetime
 import prtsc
 
 def setBinary():
-    binary = FirefoxBinary('etc/firefox-54.0.1/firefox/firefox-bin') #Path to your binary
+    binary = FirefoxBinary(cfg.tests['driver']) #Path to your binary
 
 def id_generator(size, chars = string.digits):
     a = ''.join(random.choice(chars) for _ in range(size))
