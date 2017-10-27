@@ -2,12 +2,12 @@
 
 # Page Object Pattern in Python
 
-#### *If you want to try this code, just change FirefoxBinary path and type `python runtests.py` in prompt - it'll "test" few of W3.org functionalities.* 
+#### *If you want to try this code on Linux, just change FirefoxBinary path and type `python runtests.py` in prompt - it'll "test" few of W3.org functionalities.*
 
 #### How to run it?:
 
 
-1. change FirefoxBinary path in file `environment.py` in line `binary = FirefoxBinary('...')`
+1. change FirefoxBinary path in file `config.py` in line `binary = 'path/to/binary'`
 
 2. in file `locators.py` set locators.
 
@@ -30,8 +30,7 @@
     ```
     class LoginPage(BasePage):
 
-      url = `https://example.com/login`
-
+      url = cfg.tests['url']
       def open_login_page(self):
         self.navigate(self.url)
 
